@@ -19,3 +19,4 @@
 > 個体数を<img src="https://latex.codecogs.com/gif.latex?n" />死ぬ確率を<img src="https://latex.codecogs.com/gif.latex?p" />とすると
 >
 > k=1,2,...nに対して確率変数
+> Markdownでは数式が書きにくいので他で書きます。
