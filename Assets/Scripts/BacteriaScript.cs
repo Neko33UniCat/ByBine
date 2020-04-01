@@ -6,11 +6,11 @@ public class BacteriaScript : MonoBehaviour
 {
     public float DyingProbability;
     public float time;
-    CounterScript Counter;
+    GeneratorScript Counter;
     // Start is called before the first frame update
     void Start()
     {
-        Counter = GameObject.Find("Counter").GetComponent<CounterScript>();
+        Counter = GameObject.Find("Generator-Counter").GetComponent<GeneratorScript>();
         Counter.num += 1;
         time = 0;
     }
