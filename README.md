@@ -18,4 +18,4 @@
 
 > 個体数を<img src="https://latex.codecogs.com/gif.latex?n" />死ぬ確率を<img src="https://latex.codecogs.com/gif.latex?p" />とすると
 >
-> 　に対して
+> k=1,2,...nに対して確率変数<img src="https://latex.codecogs.com/gif.latex?X_k" />
