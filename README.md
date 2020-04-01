@@ -17,3 +17,5 @@
 ## 説明
 
 > 個体数を<img src="https://latex.codecogs.com/gif.latex?n" />死ぬ確率を<img src="https://latex.codecogs.com/gif.latex?p" />とすると
+>
+> 　に対して
