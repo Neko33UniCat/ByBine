@@ -15,13 +15,7 @@
 > 期待値を使って下で説明する。
 
 ## 説明
-
-> 個体数を<img src="https://latex.codecogs.com/gif.latex?n" />死ぬ確率を<img src="https://latex.codecogs.com/gif.latex?p" />とすると
->
-> k=1,2,...nに対して確率変数
->
-> Markdownでは数式が書きにくいので他で書きます。
-
+> [説明のPDFはここから](https://github.com/Neko33UniCat/Bybine/blob/master/explain/explain.pdf)
 ## Simulation
 
 `./Application`から環境に合ったものを実行してください。
