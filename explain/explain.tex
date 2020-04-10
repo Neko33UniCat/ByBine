@@ -1,0 +1,55 @@
+\documentclass[11pt, oneside]{jarticle}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+%SetFonts
+
+%SetFonts
+
+
+\title{説明}
+\date{}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+\section{分裂方法と淘汰の方法}
+細菌が死滅する確率を$p(0 \le p \le 1) $とする。\\
+一つ一つの細菌は1秒毎に$p$の確率で死滅、$1-p$の確率で分裂のどちらか一方の行動を取るものとする。\\
+(./Assets/Scripts/Bacteria.cs 21行目 〜 34行目)\\
+
+\section{数学的根拠}
+上記の方法で全体としても$p$の割合だけ死滅するかは確率変数の加法定理を用いて説明できる。\\
+個体数を$n(n>=1)$死滅する確率を$p$とおく。\\
+$k=1,2, ...... , n$に対して確率変数$X_k$を次のように定める。\\
+%\subsection{}
+\[
+	X_k = 
+	\begin{cases}
+		1 & (k\mbox{番目の細菌が死滅した })\\
+		0 & (k\mbox{番目の細菌が死滅しなかった})\\
+	\end{cases}
+\]
+$X_k$の期待値$E(X_k)$は\\
+\begin{eqnarray*}
+	E(X_k) & = & 1 * p + 0 * (1-p)\\
+		& = & p
+\end{eqnarray*}
+死滅する細菌の数を$X$とおくと、$X=X_1 + X_2 + ...... + X_n$であるから期待値の加法定理より
+\begin{eqnarray*}
+	E(X) & = &  E(X_1) + E(X_2) + ...... + E(X_n)\\
+		& = & p + p + ...... + p\\
+		& = & np
+\end{eqnarray*}
+よって全体でnp匹死滅する。\\
+元々はn匹いたから死滅する確率は\\
+\begin{eqnarray*}
+	\frac{np}{n} = p 
+\end{eqnarray*}
+となり、全体でも$p$の割合で死滅する。
+\end{document}  
