@@ -18,4 +18,4 @@
 > [説明のPDFはここから](https://github.com/Neko33UniCat/Bybine/blob/master/explain/explain.pdf)
 ## Simulation
 
-`./Application`から環境に合ったものを実行してください。
+`./Applications`から環境に合ったものを実行してください。
